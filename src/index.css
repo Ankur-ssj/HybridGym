@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #050505;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background:#2e99d4;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f7f7f7;
+    border-radius:20px;
+}
+::-webkit-scrollbar-track-piece{
+    background:#f7f7f7;
+    border-radius:20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    *{
+        overflow-x:hidden;
+        position:relative;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/*     *{
+        overflow-x:hidden;
+        position:relative;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/*     *{
+        overflow-x:hidden;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
