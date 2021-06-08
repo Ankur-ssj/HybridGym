@@ -1,4 +1,4 @@
-import React, {createContext, useReducer} from 'react';
+import React, {createContext, useEffect, useReducer} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -19,6 +19,15 @@ export const UserContext = createContext();
 const App=()=>{
 
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    if(localStorage.getItem('token')){
+      dispatch({type: "USER", payload:true});
+      console.log(localStorage.getItem("token"));
+    }
+  }, [])
+    
+  
 
   return (
     <UserContext.Provider value = {{state, dispatch}}>     
