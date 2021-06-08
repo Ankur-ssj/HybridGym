@@ -607,27 +607,27 @@
     margin-left: 20px;
   }
   .aboutimg2 {
-    height: 600px;
-    width: 800px;
+    height: 400px;
+    width: auto;
     position: relative;
     top: 10%;
-    left: 22%;
-    margin-top: -150px;
+    left: 12%;
+    margin-top: -90px;
   }
   .aboutimg3 {
     height: 400px;
     width: 700px;
     position: relative;
     top: 10%;
-    left: 22%;
+    left: 16%;
     margin-top: -150px;
   }
   .aboutimg4 {
-    height: 600px;
-    width: 400px;
+    height: 400px;
+    width: auto;
     position: relative;
     top: 10%;
-    left: 66%;
+    left: 63.6%;
     margin-top: -300px;
   }
   .about-header {
@@ -653,10 +653,10 @@
   }
   .about-text1 {
     position: absolute;
-    width: 705px;
+    width: 505px;
     height: 332px;
-    left: 580px;
-    top: 335px;
+    left: 480px;
+    top: 385px;
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -674,7 +674,7 @@
   }
   .sub-head1 {
     position: absolute;
-    width: 705px;
+    width: 395px;
     left: 580px;
     top: 350px;
     font-style: normal;
@@ -704,7 +704,7 @@
     width: 90%;
     height: 332px;
     left: 20px;
-    top: -60px;
+    top: -30px;
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -721,7 +721,7 @@
   }
   .sub-head3 {
     position: relative;
-    width: 705px;
+    width: 605px;
     left: 20px;
     top: 50px;
     font-style: normal;
@@ -734,7 +734,7 @@
   }
   .about-text3 {
     position: relative;
-    width: 705px;
+    width: 605px;
     height: 332px;
     left: 20px;
     top: -40px;
@@ -754,7 +754,7 @@
   }
   .sub-head4 {
     position: relative;
-    width: 705px;
+    width: 390px;
     left: 580px;
     top: 50px;
     font-style: normal;
@@ -768,7 +768,7 @@
   }
   .about-text4 {
     position: relative;
-    width: 90%;
+    width: 88.5%;
     height: 332px;
     left: 65px;
     top: -60px;

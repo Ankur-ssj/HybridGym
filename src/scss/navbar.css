@@ -4,16 +4,35 @@
 /* font-family: 'Tomorrow', sans-serif; */
 .brand-img {
   height: 50px;
+  background-color: transparent !important;
 }
 
 .nav-item {
   font-family: 'Tomorrow', sans-serif;
   letter-spacing: 4px;
+  background-color: transparent !important;
+}
+
+.dropdown-item {
+  font-size: 12px;
+  color: #fff;
+  background-color: #000 !important;
+}
+
+.dropdown-item:hover {
+  color: #000 !important;
+  background-color: #2e99d4 !important;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  background-color: #000 !important;
 }
 
 .nav-link {
   font-size: 12px;
   color: #fff;
+  background-color: transparent !important;
 }
 
 /* Extra small devices (phones, 600px and down) */

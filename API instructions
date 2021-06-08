@@ -1,0 +1,19 @@
+GET api/users/ = get all users list
+GET api/users/:id = get a user by id
+PATCH api/users/:id = updates name, phone, reps, sets
+DELETE api/users/:id = delete user (needs Authorization with Bearer Token)
+POST api/users/login = login with email and password
+POST api/users/signup = register new user. Needs : name, phone, email, password
+PATCH api/users/passChange/:id = change password. Needs email, oldPass and new password
+
+GET api/admin/ = get all users list
+PATCH api/admin/:id = updates name, phone, reps, sets
+PATCH api/admin/videos/current/change/:id = Changes the current videos. Send url array and title array in json. eg: {
+    "url": [content],
+    "title": [content]
+}
+
+GET api/admin/videos/current = gets current set videos
+POST api/admin/videos/all = add new video with url and title
+GET api/admin/videos/all = get all videos
+DELETE api/admin/videos/all/:id = delete video with the given id
