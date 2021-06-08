@@ -56,9 +56,9 @@ const Footer=()=> {
           </div>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+            <Link to={'//www.instagram.com/hybrid360fit/'}>Instagram</Link>
             <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
+            <Link to={'//www.youtube.com/channel/UCo2jr-McxvV9JL81Gr8IacQ?view_as=subscriber'}>Youtube</Link>
             <Link to='/'>Twitter</Link>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Footer=()=> {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-                <img src={PNG_H360OverheadWhite}/>
+                <img src={PNG_H360OverheadWhite} alt="footer logo"/>
             </Link>
           </div>
           <div className='website-rights'>©Hybrid360Fit 2021 | All Rights Reserved</div>
@@ -82,7 +82,9 @@ const Footer=()=> {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to={
+                '//www.instagram.com/hybrid360fit/'
+                }
               target='_blank'
               aria-label='Instagram'
             >
@@ -91,7 +93,7 @@ const Footer=()=> {
             <Link
               className='social-icon-link'
               to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                '//www.youtube.com/channel/UCo2jr-McxvV9JL81Gr8IacQ?view_as=subscriber'
               }
               target='_blank'
               aria-label='Youtube'

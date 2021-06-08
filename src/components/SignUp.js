@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Button} from './Button';
-import {useHistory} from 'react-router-dom';
+import {useHistory, NavLink} from 'react-router-dom';
 import '../scss/signup.css';
 import formbg from '../Images/formbg.png';
 
@@ -46,18 +46,19 @@ const SignUp = () => {
 
     return (    
         <div>
-        <img className="formbg" src={formbg} alt=""/>
+        <img className="formbg" src={formbg} alt="background"/>
         <div className="sign-wrapper">
         <div className="sign-title">SIGN UP</div>
         <form method="POST" className="signup-form">
           <div className="sign-input-fields">
-            <input type="text" name="name" id="name" value={user.name} onChange={handleInputs} className="input" placeholder="Name"/>
-            <input type="email" name="email" id="email" value={user.email} onChange={handleInputs} className="input" placeholder="Email Address"/>
-            <input type="number" name="phone" id="phone" value={user.phone} onChange={handleInputs} className="input" placeholder="Phone"/>
-            <input type="password" name="password" id="password" value={user.password} onChange={handleInputs} className="input" placeholder="Password"/>
+            <input type="text" autoComplete="off" name="name" id="name" value={user.name} onChange={handleInputs} className="input" placeholder="Name"/>
+            <input type="email" autoComplete="off" name="email" id="email" value={user.email} onChange={handleInputs} className="input" placeholder="Email Address"/>
+            <input type="number" autoComplete="off" name="phone" id="phone" value={user.phone} onChange={handleInputs} className="input" placeholder="Phone"/>
+            <input type="password" autoComplete="off" name="password" id="password" value={user.password} onChange={handleInputs} className="input" placeholder="Password"/>
           </div>
             <Button className="btn" name="signup" id="signup" onClick={postData} type="submit" value="register">SIGN UP</Button>
       </form>
+      <p className="below-form">If already a member already please <span><NavLink className="span-txt" to='/Login'>Login</NavLink></span></p>
       </div>
 </div>
 

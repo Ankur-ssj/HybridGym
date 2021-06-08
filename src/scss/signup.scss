@@ -20,3 +20,60 @@
     border-radius: 5px;
     margin-bottom: 200px;
 }
+.signup-form{
+    background-color: transparent;
+    text-align: center;
+}
+.sign-title{
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 50px;
+    font-weight:500;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+}
+
+.sign-input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    background-color: transparent !important;
+    outline-style: none;
+    border: 0;
+}
+
+.input{
+    margin: 10px 0;
+    background-color: transparent !important;
+    border: 0px;
+    border-bottom: 2px solid #2e99d4;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    outline-style: none;
+}
+
+.below-form{
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+.span-text{
+    background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #c5ecfd;
+    background-color: transparent;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c5ecfd;
+    background-color: transparent;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c5ecfd;
+    background-color: transparent;
+  }

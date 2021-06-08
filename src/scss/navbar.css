@@ -19,6 +19,11 @@
   background-color: #000 !important;
 }
 
+.name-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .dropdown-item:hover {
   color: #000 !important;
   background-color: #2e99d4 !important;

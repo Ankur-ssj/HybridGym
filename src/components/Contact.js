@@ -18,7 +18,7 @@ const Contact = () => {
       }
     return (
         <div>
-        <img className="formbg" src={formbg} alt=""/>
+        <img className="formbg" src={formbg} alt="background"/>
         <div className="wrapper">
         <div className="title">CONTACT US</div>
         <form className="contact-form" onSubmit={sendEmail}>
