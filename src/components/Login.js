@@ -1,18 +1,32 @@
-import React, {useState} from 'react'
+import React, {useState, useReducer, useContext} from 'react'
 import {Button} from './Button';
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
 import '../scss/signup.css';
 import formbg from '../Images/formbg.png';
+import { useTheme, useThemeUpdate } from './LoggedIn';
+import {UserContext} from "../App";
+
 
 const Login = () => {
+
+  
+  const {state, dispatch} = useContext(UserContext);
+
+    
+
     const history = useHistory();
-    const[token, setToken] =useState('');
     const[email, setEmail] = useState('');
-    const[res, setRes] = useState({});
-    const[password, setPassword] = useState('');
+    const[password, setPassword] = useState(''); 
+
+    const logged = useTheme();
+    const toggleLogged = useThemeUpdate();
+    
+
 
     const loginUser = async(e) =>{
+      
+      
         e.preventDefault();
             console.log('reached')
             const axiosPost = axios.create({
@@ -22,6 +36,7 @@ const Login = () => {
                   'password': password,
                 }) //syntax switched to backticks from inverted commas for global uid
                 .then(log  =>{ 
+                            
                             global.token = log.data.accessToken;
                             global.name = log.data.name;
                             global.uid = log.data.id;
@@ -29,15 +44,17 @@ const Login = () => {
                             if(log.status === 500 || !log) {
                                 window.alert("Invalid credentials !");
                                 console.log("invalid credentials!");
-                              } else if(log.status === 200) {
+                              } 
+                              
+                              else if(log.status === 200) {
                                 window.alert("login successful!");
                                 console.log(" login successful!");
-                                history("/" , {params:"loggedin"})
+                                dispatch({type: "USER", payload:true});
+                                console.log(logged)
+                                history.push('/', {params: true});
                               }
                     })
-          console.log(res);
-          console.log(token);
-
+         
         }
 
     return (
