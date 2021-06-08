@@ -1,0 +1,121 @@
+.btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 13px;
+}
+
+.btn--primary {
+  background-color: #2E99D4;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid #2e99d4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn--medium {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  margin-top: -8px;
+}
+
+.btn--large {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+  background-color: #fff;
+  color: #2E99D4;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 13px;
+  }
+  .btn--primary {
+    background-color: #2E99D4;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 2px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .btn--primary {
+    background-color: #2E99D4;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 2px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .btn--primary {
+    background-color: #2E99D4;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 2px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .btn--primary {
+    background-color: #2E99D4;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 2px;
+  }
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,9 @@
+POST https://gym-app-rest-api.herokuapp.com/users/signup
+Content-Type: application/json
+
+{
+    "name": "ANkur Joshi",
+    "email": "hydasdasd@gmail.com",
+    "password": "hyde123",
+    "phone": 348999999
+}
