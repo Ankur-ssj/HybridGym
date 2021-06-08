@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createContext, useReducer} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -10,10 +10,20 @@ import Contact from './components/Contact';
 import WorkoutPackage from './components/WorkoutPackage';
 import Login from './components/Login';
 
+import {initialState, reducer} from '../src/Reducer/useReducer';
+
+
+
+export const UserContext = createContext();
+
 const App=()=>{
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <Router>
-    <Navbar/>
+    <UserContext.Provider value = {{state, dispatch}}>     
+      <Router>
+      <Navbar/>
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/About" exact component={About}/>
@@ -23,8 +33,9 @@ const App=()=>{
         <Route path="/WorkoutPackage" exact component={WorkoutPackage}/>
         <Route path="/Login" exact component={Login}/>
       </Switch>
-    <Footer/>
-    </Router>
+      <Footer/>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
