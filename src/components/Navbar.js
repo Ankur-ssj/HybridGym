@@ -1,9 +1,13 @@
 import React, {useContext} from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import PNG_H360IndentedWhite from '../Logos/PNG_H360IndentedWhite.png';
 import '../scss/navbar.css';
 import {Button} from './Button';
 import {UserContext} from '../App';
+
+
+
+
 
 const Navbar=()=>{
 
@@ -39,8 +43,11 @@ const Navbar=()=>{
                 <li><NavLink className="dropdown-item" to="/">GALLERY</NavLink></li>
               </ul>
             </li>
-              <li className="nav-item" >
-               <NavLink to="/" className="name-link">{global.name}</NavLink> 
+            
+              
+             
+              <li className="nav-link" to="/">
+                {global.name}
               </li> 
          
               
@@ -104,7 +111,8 @@ const Navbar=()=>{
   
 
   const logout = () => {
-      dispatch({type:'USER', payload:false})
+      dispatch({type:'USER', payload:false});
+      localStorage.removeItem('token');
   }
   return(
     <RenderMenu />
